@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>SCS - Printing Service</title>
+  <title>Printing - SCS</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header>
-    <h1>Upload Your Document for Printing</h1>
-    <p>We check formatting and print stress-free for you</p>
+    <h1>Submit Your Project for Printing</h1>
+    <p>We format, print, photocopy, and scan for you</p>
   </header>
 
   <main>
@@ -26,7 +27,7 @@
         <label>Email Address:</label>
         <input type="email" name="email" required>
 
-        <label>Total Number of Pages:</label>
+        <label>Total Pages:</label>
         <input type="number" name="totalPages" id="totalPages" min="1" required>
 
         <label>Number of Color Pages:</label>
@@ -35,12 +36,12 @@
         <label>Number of Copies:</label>
         <input type="number" name="copies" id="copies" min="1" value="1" required>
 
-        <label>Upload Your File (PDF/DOC):</label>
+        <label>Upload File:</label>
         <input type="file" name="file" accept=".pdf,.doc,.docx" required>
 
         <p id="printCost">Estimated Cost: GHS 0.00</p>
 
-        <button type="submit">Submit for Printing</button>
+        <button type="submit">Submit</button>
       </form>
     </section>
   </main>
