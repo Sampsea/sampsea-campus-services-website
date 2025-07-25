@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SCS - Printing Service</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Upload Your Document for Printing</h1>
+    <p>We check formatting and print stress-free for you</p>
+  </header>
+
+  <main>
+    <section>
+      <form action="YOUR_BACKEND_URL/upload.php" method="POST" enctype="multipart/form-data">
+        <label>Full Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Department:</label>
+        <input type="text" name="department" required>
+
+        <label>Contact Number:</label>
+        <input type="tel" name="contact" required>
+
+        <label>Email Address:</label>
+        <input type="email" name="email" required>
+
+        <label>Total Number of Pages:</label>
+        <input type="number" name="totalPages" id="totalPages" min="1" required>
+
+        <label>Number of Color Pages:</label>
+        <input type="number" name="colorPages" id="colorPages" min="0" required>
+
+        <label>Number of Copies:</label>
+        <input type="number" name="copies" id="copies" min="1" value="1" required>
+
+        <label>Upload Your File (PDF/DOC):</label>
+        <input type="file" name="file" accept=".pdf,.doc,.docx" required>
+
+        <p id="printCost">Estimated Cost: GHS 0.00</p>
+
+        <button type="submit">Submit for Printing</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Sampsea Campus Services (SCS)
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
